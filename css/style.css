@@ -2,6 +2,16 @@
   display:flex;
   background-color: #0D1B1E ;
   width: auto;
+  height: 120px;
+  padding: 30px;
+  justify-content: center;
+  color: white;
+}
+
+.button_reset {
+  display:flex;
+  background-color: #0D1B1E ;
+  width: auto;
   height: 60vh;
   padding: 30px;
   justify-content: center;

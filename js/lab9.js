@@ -7,3 +7,9 @@ function count() {
   document.getElementById("end").innerHTML=`${localStorage.count}` ;
 }
 count()
+
+function reset() {  
+  localStorage.count = 0
+  document.getElementById("end").innerHTML=`${localStorage.count}` ;
+}
+reset()
