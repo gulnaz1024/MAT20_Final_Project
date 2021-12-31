@@ -1,19 +1,13 @@
-.button_container {
+/*.button_container {
   display:flex;
   background-color: #0D1B1E ;
-  width: auto;
-  height: 120px;
-  padding: 30px;
   justify-content: center;
   color: white;
 }
 
 .button_reset {
   display:flex;
-  background-color: #0D1B1E ;
-  width: auto;
-  height: 60vh;
-  padding: 30px;
+  background-color: rgb(9, 255, 0);
   justify-content: center;
   color: white;
 }
@@ -21,28 +15,72 @@
 .head_container {
   display: flex;
   background-color:#EB5160;
-  width: auto;
-  height: 40vh;
   color: white;
   align-items: center;
   justify-content: center;
 }
-
+*/
 .read {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  color: white;
   font-size: 20px;
 }
 
-#end{
+#end {
   font-size: 30px;
 }
 
-button{    
-  border-radius: 5px;
+button {   
   position: absolute;
   color: #FFFFFF;
   background-color: #EB5160 ;
+  z-index: 3;  
+}
+
+body {
+  width: auto;
+  height: 100vh;
+  background-image: linear-gradient(rgb(12, 1, 61), rgb(33, 128, 252));
+  /* background: url('/img/background_mountains.png'), linear-gradient(red, yellow); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.background_mountains {
+  position: absolute;
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.sun {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  display:block;
+  width:auto;
+  height:50%;
+  z-index: 1;
+  top: 20%;
+  left: 40%;
+}
+
+.moon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  display:block;
+  width:auto;
+  height:20%;
+  z-index: 1;
+  top: 10%;
+  right: 50%;
 }
