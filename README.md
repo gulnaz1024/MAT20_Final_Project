@@ -24,4 +24,5 @@
 ### Wasn't done yet!
 
 > [Confirmation of action with CSS: for reset](https://www.w3schools.com/howto/howto_css_delete_modal.asp)
+
 > [Preloader](https://www.w3schools.com/howto/howto_css_loader.asp)
