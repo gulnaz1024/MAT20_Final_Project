@@ -41,7 +41,7 @@ button {
 }
 
 body {
-  width: auto;
+  width: 100vw;
   height: 100vh;
   background-image: linear-gradient(rgb(12, 1, 61), rgb(33, 128, 252));
   /* background: url('/img/background_mountains.png'), linear-gradient(red, yellow); */
@@ -63,7 +63,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   display:block;
   width:auto;
   height:50%;
@@ -76,7 +76,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   display:block;
   width:auto;
   height:20%;
