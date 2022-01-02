@@ -76,6 +76,9 @@ body {
   height:100%;
   object-fit: cover;
   z-index: 2;
+
+  /*just for tuning sun movement on different devices*/
+  /* opacity: 0.2;  */
 }
 
 .skyObjects {
@@ -88,13 +91,18 @@ body {
   display:block;
   width:auto;
   height:50%;
+  left: 0%;
+  top: 20%;
   z-index: 1;
+  
 }
 
 .moon {
   position: fixed;
   display:block;
   width:auto;
-  height:27%;
+  height:50%;
+  top: 20%;
+  right: 0%;
   z-index: 1;
 }

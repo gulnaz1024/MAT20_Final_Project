@@ -22,7 +22,9 @@
 
 > [Make image slide outside of screen](https://stackoverflow.com/questions/55339667/make-image-slide-in-from-outside-the-screen-html)
 
->[Button style](https://habr.com/ru/company/ruvds/blog/489820/)
+> [Button style](https://habr.com/ru/company/ruvds/blog/489820/)
+
+> [Get window size for tuning rotation parameters](https://dmitripavlutin.com/screen-window-page-sizes/)
 
 
 ### Wasn't done yet!
