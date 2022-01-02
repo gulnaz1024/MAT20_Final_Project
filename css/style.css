@@ -1,10 +1,10 @@
-/*.button_container {
+.button_container {
   display:flex;
   background-color: #0D1B1E ;
-  justify-content: center;
-  color: white;
+  justify-content: center; 
 }
 
+/*
 .button_reset {
   display:flex;
   background-color: rgb(9, 255, 0);
@@ -20,30 +20,49 @@
   justify-content: center;
 }
 */
-.read {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-  font-size: 20px;
+
+.zikrCounter {
+  display:flex;
+  position: relative;
+  justify-content: center;  
+  align-self: center;
+  color: rgb(248, 2, 2);
+  top: 25%;   
+  z-index: 4;
 }
 
-#end {
-  font-size: 30px;
+#zikrs {
+  font-size: 70px;  
 }
 
-button {   
+.zikrButton {
   position: absolute;
-  color: #FFFFFF;
-  background-color: #EB5160 ;
-  z-index: 3;  
+  background: rgb(170, 247, 174);
+  border-color: rgb(235, 227, 227);  
+  border-width: 5px;  
+  border-radius: 15px;
+  color: rgb(253, 11, 31);
+  font-size: 27px;
+  z-index: 3;
+  bottom: 10%;
+  width: 60vw;
+  height: 75px;
+  max-width: 400px;
+}
+
+.bt {   
+  position: absolute;
+  z-index: 3;
+  bottom: 40%;
+  width: 70vw;
+  height: 100px;
+  max-width: 400px;
 }
 
 body {
-  width: 100vw;
+  width: auto;
   height: 100vh;
-  background-image: linear-gradient(rgb(12, 1, 61), rgb(33, 128, 252));
+  background-image: linear-gradient(rgb(12, 1, 61), rgb(100, 167, 255));
   /* background: url('/img/background_mountains.png'), linear-gradient(red, yellow); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,28 +78,23 @@ body {
   z-index: 2;
 }
 
-.sun {
-  display: flex;
-  align-items: center;
+.skyObjects {
+  display:flex;
   justify-content: center;
+}
+
+.sun {
   position: fixed;
   display:block;
   width:auto;
   height:50%;
   z-index: 1;
-  top: 20%;
-  left: 40%;
 }
 
 .moon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: fixed;
   display:block;
   width:auto;
   height:20%;
   z-index: 1;
-  top: 10%;
-  right: 50%;
 }

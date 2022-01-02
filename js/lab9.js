@@ -10,7 +10,7 @@ function count() {
 count()
 
 function reset() {  
-  localStorage.count = 0
+  localStorage.count = 0;
   document.getElementById("zikrs").innerHTML=`${localStorage.count}` ;
   document.getElementById('sun').style.top= 300 + "px";
 }

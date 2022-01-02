@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Counter</title>
+    <title>Zikr</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css" />
@@ -11,22 +11,16 @@
   </head>
   <body>
     <img class="background_mountains" src="img/background_mountains.png"> 
-    <img class="sun" src="img/sun.png" id='sun'>
-    <img class="moon" src="img/moon.png">
+    <div class = "skyObjects">
+      <img class="sun" src="img/sun.png" id='sun'>
+      <img class="moon" src="img/moon.png" id='moon'>
+    </div>
     <div class = "button_container">
-      <button type="button" onclick = "count()"> <img src="img/button_counter.png"/> </button>
-    </div>   
-    <header class="head_container"> 
-      <div class="read">
-        <p> You clicked </p>
-        <br>
-        <div id="zikrs"></div>
-        <br>
-        <p> times </p>
-      </div> 
-    </header>
+      <button type="button" class="zikrButton" onclick = "count()"> Zikr </button>
+    </div>      
+    <div class="zikrCounter" id="zikrs"></div>    
     <div class = "button_reset">
-      <button type="button" onclick = "reset()"> <img src="img/button_reset.png"/> </button>
+      <button type="button" class="bt btn-light" onclick = "reset()"> RESET </button>
     </div> 
     <script src="js/lab9.js"></script>
   </body>
