@@ -14,7 +14,9 @@
 
 > [CSS The object-fit Property: "cover" for mountains picture](https://www.w3schools.com/css/css3_object-fit.asp)
 
-> [Responsive Objects](https://www.w3schools.com/css/css_rwd_images.asp), (https://proglib.io/p/responsive-images)
+> [Responsive Objects: for background mountains](https://www.w3schools.com/css/css_rwd_images.asp)
+
+> [Responsive Objects: for buttons](https://proglib.io/p/responsive-images)
 
 > [CSS Gradients: for background sky](https://www.w3schools.com/css/css3_gradients.asp)
 

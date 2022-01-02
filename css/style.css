@@ -39,7 +39,7 @@
   position: absolute;
   background: rgb(170, 247, 174);
   border-color: rgb(235, 227, 227);  
-  border-width: 5px;  
+  border-width: 2px;  
   border-radius: 15px;
   color: rgb(253, 11, 31);
   font-size: 27px;
@@ -62,7 +62,7 @@
 body {
   width: auto;
   height: 100vh;
-  background-image: linear-gradient(rgb(12, 1, 61), rgb(100, 167, 255));
+  background-image: linear-gradient( rgb(32, 3, 158), rgb(100, 167, 255));
   /* background: url('/img/background_mountains.png'), linear-gradient(red, yellow); */
   background-repeat: no-repeat;
   background-size: cover;
