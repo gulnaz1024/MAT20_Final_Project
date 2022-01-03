@@ -39,22 +39,23 @@ let speed = pi/40;
 let posInUnitСircleSun = pi;
 let posInUnitСircleMoon = 0;
 
+document.getElementById("zikrs").innerHTML=`${localStorage.count}`
+
 function count() {  
-  if (localStorage.count) {
-    //localStorage.count++;
-    move_by_ellipse();
-    move_by_line()
-  } else {
-    localStorage.count = 1;
-  }
+  move_by_ellipse();
+  //move_by_line()
   localStorage.count++;
   document.getElementById("zikrs").innerHTML=`${localStorage.count}`;
 }
 
-function reset() {  
+function resetZikrs () {
   localStorage.count = 0;
   document.getElementById("zikrs").innerHTML=`${localStorage.count}` ;
-  
+  resetSkyObjects()
+}
+
+function resetSkyObjects() { 
+
   document.getElementById('sunID').style.left=  (ellipseSize*Math.cos(pi)) + xPosition + "px";
   document.getElementById('sunID').style.top= (ellipseSize*axialElongation*Math.sin(pi)) + yPosition + "px";
   
@@ -64,7 +65,9 @@ function reset() {
   posInUnitСircleSun = pi;
   posInUnitСircleMoon = 0;
 }
-reset()
+resetSkyObjects()
+
+
 
 function move_by_ellipse() {
   let xNewPositionSun= (ellipseSize*Math.cos(posInUnitСircleSun)) + xPosition;
@@ -86,16 +89,14 @@ function move_by_ellipse() {
 
 }
 
-function move_by_line() {
-  let step = 50;
-  let x = document.getElementById('sunID').offsetTop;
-  x -= step;
-  document.getElementById('sunID').style.top= x + "px";
-}
+// function move_by_line() {
+//   let step = 50;
+//   let x = document.getElementById('sunID').offsetTop;
+//   x -= step;
+//   document.getElementById('sunID').style.top= x + "px";
+// }
 
-
-
-//Reset function for only Y-axis movement
+// Reset function for only Y-axis movement
 // function reset() {  
 //   localStorage.count = 0;
 //   document.getElementById("zikrs").innerHTML=`${localStorage.count}` ;
