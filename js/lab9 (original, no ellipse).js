@@ -7,7 +7,6 @@ function count() {
   }
   document.getElementById("zikrs").innerHTML=`${localStorage.count}` ;
 }
-count()
 
 function reset() {  
   localStorage.count = 0;

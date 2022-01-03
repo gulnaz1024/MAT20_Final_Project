@@ -81,7 +81,7 @@ body {
   z-index: 2;
 
   /*just for tuning sun movement on different devices*/
-  /* opacity: 0.2;  */
+   opacity: 0.2;  
 }
 
 .skyObjects {
