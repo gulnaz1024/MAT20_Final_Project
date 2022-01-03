@@ -98,3 +98,14 @@ setTimeout('updateTime();', 25);
 }
 
 window.onload=updateTime
+
+function count() {  
+  if (localStorage.count) {
+    localStorage.count++;
+    // move_by_line()
+  } else {
+    localStorage.count = 1;
+  }
+  document.getElementById("zikrs").innerHTML=`${localStorage.count}` ;
+}
+count()

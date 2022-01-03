@@ -26,6 +26,8 @@
 
 > [Get window size for tuning rotation parameters](https://dmitripavlutin.com/screen-window-page-sizes/)
 
+> [CSS text stroke](https://www.w3schools.com/cssref/css3_pr_text-shadow.asp)
+
 
 ### Wasn't done yet!
 
