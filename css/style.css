@@ -20,7 +20,7 @@
   font-size: 75px;
   font-weight: bold;
   /* -webkit-text-stroke:2px rgb(29, 23, 105); */
-  text-shadow: 0 0 7px #180e01; 
+  text-shadow: 0 0 7px  #180e01; 
 }
 
 .zikrButton {
@@ -82,18 +82,24 @@
 }
 
 .resetButton2 {   
+  display: flex;
+  justify-content:center;
+  align-items: flex-end;  
   
   position:absolute;
   width: 40vw;
   height: 130px;
   max-width: 400px;
   background-color: Transparent;
-  border-color: rgb(12, 4, 117);  
+  /* border-color: rgb(12, 4, 117);   */
   /* border-width: 6px;  
   border-radius: 15px; */
-  line-height: 50px;
+  line-height: 30px;
   border: none;
 
+  color: rgb(24, 4, 94);
+  font-size: 21px;
+  font-weight: bold;
  
 }
 

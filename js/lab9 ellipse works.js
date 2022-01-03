@@ -34,7 +34,7 @@ let xPosition = window.innerWidth / 2 - shiftX;
 let yPosition = window.innerHeight / 2;
 
 let pi = Math.PI;
-let speed = pi/10;
+let speed = pi/40;
 
 let posInUnitСircleSun = pi;
 let posInUnitСircleMoon = 0;
