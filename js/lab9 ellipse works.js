@@ -48,17 +48,21 @@ function count() {
     localStorage.count = 1;
   }
   localStorage.count++;
-  document.getElementById("zikrs").innerHTML=`${localStorage.count}` ;
+  document.getElementById("zikrs").innerHTML=`${localStorage.count}`;
 }
 
 function reset() {  
   localStorage.count = 0;
   document.getElementById("zikrs").innerHTML=`${localStorage.count}` ;
+  
   document.getElementById('sunID').style.left=  (ellipseSize*Math.cos(pi)) + xPosition + "px";
   document.getElementById('sunID').style.top= (ellipseSize*axialElongation*Math.sin(pi)) + yPosition + "px";
   
   document.getElementById('moonID').style.left=  (ellipseSize*Math.cos(0)) + xPosition + "px";
-  document.getElementById('moonID').style.top= (ellipseSize*axialElongation*Math.sin(0)) + yPosition + "px";
+  document.getElementById('moonID').style.top= (ellipseSize*axialElongation*Math.sin(0)) + yPosition + "px";  
+
+  posInUnitСircleSun = pi;
+  posInUnitСircleMoon = 0;
 }
 reset()
 
@@ -88,6 +92,8 @@ function move_by_line() {
   x -= step;
   document.getElementById('sunID').style.top= x + "px";
 }
+
+
 
 //Reset function for only Y-axis movement
 // function reset() {  

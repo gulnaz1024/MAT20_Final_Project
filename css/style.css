@@ -1,27 +1,12 @@
-.button_container {
+.zikr_button_container {
   display:flex;
   background-color: #0D1B1E ;
   justify-content: center; 
+  vertical-align:text-bottom;
+  
 }
 
-/*
-.button_reset {
-  display:flex;
-  background-color: rgb(9, 255, 0);
-  justify-content: center;
-  color: white;
-}
-
-.head_container {
-  display: flex;
-  background-color:#EB5160;
-  color: white;
-  align-items: center;
-  justify-content: center;
-}
-*/
-
-.zikrCounter {
+.zikrNumber {
   display:flex;
   position: relative;
   justify-content: center;  
@@ -51,15 +36,65 @@
   width: 60vw;
   height: 75px;
   max-width: 400px;
+  
 }
 
-.bt {   
+.reset_button_container {
+  display:flex;
+  position: relative;
+  justify-content:center;  
+  /* align-self: center; */
+  top: 30%;  
+  z-index: 5;
+  
+  
+}
+
+.resetButton3 {   
+  
   position: absolute;
-  z-index: 3;
-  bottom: 40%;
-  width: 70vw;
-  height: 100px;
+  width: 40vw;
+  height: 130px;
   max-width: 400px;
+  background-color: rgb(57, 214, 253);
+  opacity: 0.4;
+  /* border-color: rgb(7, 1, 31);  
+  border-width: 6px;   */
+  border-radius: 15px;
+  border: none;
+  
+ 
+}
+
+.resetButton {   
+  
+  position: absolute;
+  width: 40vw;
+  height: 130px;
+  max-width: 400px;
+  background-color: transparent;
+  /* border-color: rgb(7, 1, 31);  
+  border-width: 6px;   */
+  border-radius: 15px;
+  border: none;
+  
+ 
+}
+
+.resetButton2 {   
+  
+  position:absolute;
+  width: 40vw;
+  height: 130px;
+  max-width: 400px;
+  background-color: Transparent;
+  border-color: rgb(12, 4, 117);  
+  /* border-width: 6px;  
+  border-radius: 15px; */
+  line-height: 50px;
+  border: none;
+
+ 
 }
 
 body {
@@ -81,7 +116,7 @@ body {
   z-index: 2;
 
   /*just for tuning sun movement on different devices*/
-   opacity: 0.2;  
+  /* opacity: 0.2;   */
 }
 
 .skyObjects {
