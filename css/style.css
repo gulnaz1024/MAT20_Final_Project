@@ -25,11 +25,11 @@
 
 .zikrButton {
   position: absolute;
-  background: rgb(170, 247, 174);
-  border-color: rgb(235, 227, 227);  
+  background: Aqua; 
+  border-color: rgb(57, 214, 253);
   border-width: 2px;  
   border-radius: 15px;
-  color: rgb(253, 11, 31);
+  color:Navy;
   font-size: 27px;
   z-index: 3;
   bottom: 10%;
@@ -44,7 +44,7 @@
   position: relative;
   justify-content:center;  
   /* align-self: center; */
-  top: 1%;  
+  top: 10%;  
   z-index: 5;
   
   
@@ -181,4 +181,18 @@ body {
       opacity: 0;
       visibility: hidden;
   }
+}
+.appName{
+  display: flex;
+  z-index: 100;
+  position:fixed;
+  color:LightYellow;
+  font-size: 50px;
+  top:30%;
+  font-weight: bold;
+}
+.preloader{
+  display: flex;
+  z-index: 99;
+  position:fixed;
 }

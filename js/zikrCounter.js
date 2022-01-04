@@ -101,6 +101,7 @@ window.addEventListener("load", function () {
   const loader = document.querySelector(".loader");
   loader.className += " hidden"; // class "loader hidden"
 });
+
 // function move_by_line() {
 //   let step = 50;
 //   let x = document.getElementById('sunID').offsetTop;
