@@ -28,11 +28,11 @@
 
 > [CSS text stroke](https://www.w3schools.com/cssref/css3_pr_text-shadow.asp)
 
+> [Preloader tutorial](https://youtu.be/xuA83OYTE7I)
+
 
 ### Wasn't done yet!
 
 > [Confirmation of action with CSS: for reset](https://www.w3schools.com/howto/howto_css_delete_modal.asp)
-
-> [Preloader](https://www.w3schools.com/howto/howto_css_loader.asp)
 
 > [Change background color](https://www.w3schools.com/jsref/met_win_setinterval.asp), (https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_setinterval_clearinterval2)
