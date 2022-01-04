@@ -39,7 +39,15 @@ let speed = pi/40;
 let posInUnitСircleSun = pi;
 let posInUnitСircleMoon = 0;
 
-document.getElementById("zikrs").innerHTML=`${localStorage.count}`
+function run() {
+  
+  x = localStorage.count;
+  if (isNaN(x) || x == undefined) {
+    localStorage.count = 0;
+  }
+  document.getElementById("zikrs").innerHTML=`${localStorage.count}`
+}
+run()
 
 function count() {  
   move_by_ellipse();
