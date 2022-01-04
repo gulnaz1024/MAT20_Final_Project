@@ -30,6 +30,8 @@
 
 > [Preloader tutorial](https://youtu.be/xuA83OYTE7I)
 
+> [Gif maker online](https://www.3dgifmaker.com/)
+
 
 ### Wasn't done yet!
 
