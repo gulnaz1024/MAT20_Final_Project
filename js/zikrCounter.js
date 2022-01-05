@@ -49,8 +49,8 @@ function initialStart() {
 initialStart();
 
 function count() {  
-  move_by_ellipse();
-  //move_by_line()
+  moveByEllipse();
+  //moveByLine()
   localStorage.count++;
   document.getElementById("zikrs").innerHTML=`${localStorage.count}`;
 }
@@ -75,7 +75,7 @@ resetSkyObjects();
 
 
 
-function move_by_ellipse() {
+function moveByEllipse() {
   let xNewPositionSun = (ellipseSize*Math.cos(posInUnitСircleSun)) + xPosition;
   let yNewPositionSun = (ellipseSize*axialElongation*Math.sin(posInUnitСircleSun)) + yPosition;
 
@@ -97,10 +97,10 @@ function move_by_ellipse() {
 
 window.addEventListener("load", function () {
   const loader = document.querySelector(".loader");
-  loader.className += " hidden"; // class "loader hidden"
+  loader.className += " hidden";
 });
 
-// function move_by_line() {
+// function moveByLine() {
 //   let step = 50;
 //   let x = document.getElementById('sunID').offsetTop;
 //   x -= step;
