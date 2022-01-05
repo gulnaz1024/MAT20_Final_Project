@@ -6,6 +6,10 @@
   
 }
 
+html {
+  overflow: hidden;
+}
+
 .zikrNumber {
   display:flex;
   position: relative;
@@ -114,6 +118,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  
 }
 
 .background_mountains {
