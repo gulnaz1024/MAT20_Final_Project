@@ -39,15 +39,14 @@ let speed = pi/40;
 let posInUnitСircleSun = pi;
 let posInUnitСircleMoon = 0;
 
-function run() {
-  
-  x = localStorage.count;
+function initialStart() {  
+  let x = localStorage.count;
   if (isNaN(x) || x == undefined) {
     localStorage.count = 0;
   }
   document.getElementById("zikrs").innerHTML=`${localStorage.count}`
 }
-run()
+initialStart();
 
 function count() {  
   move_by_ellipse();
@@ -56,33 +55,32 @@ function count() {
   document.getElementById("zikrs").innerHTML=`${localStorage.count}`;
 }
 
-function resetZikrs () {
+function resetZikrs() {
   localStorage.count = 0;
   document.getElementById("zikrs").innerHTML=`${localStorage.count}` ;
   resetSkyObjects()
 }
 
 function resetSkyObjects() { 
-
-  document.getElementById('sunID').style.left=  (ellipseSize*Math.cos(pi)) + xPosition + "px";
-  document.getElementById('sunID').style.top= (ellipseSize*axialElongation*Math.sin(pi)) + yPosition + "px";
-  
-  document.getElementById('moonID').style.left=  (ellipseSize*Math.cos(0)) + xPosition + "px";
-  document.getElementById('moonID').style.top= (ellipseSize*axialElongation*Math.sin(0)) + yPosition + "px";  
-
   posInUnitСircleSun = pi;
   posInUnitСircleMoon = 0;
+
+  document.getElementById('sunID').style.left =  (ellipseSize*Math.cos(posInUnitСircleSun)) + xPosition + "px";
+  document.getElementById('sunID').style.top = (ellipseSize*axialElongation*Math.sin(posInUnitСircleSun)) + yPosition + "px";
+  
+  document.getElementById('moonID').style.left =  (ellipseSize*Math.cos(posInUnitСircleMoon)) + xPosition + "px";
+  document.getElementById('moonID').style.top = (ellipseSize*axialElongation*Math.sin(posInUnitСircleMoon)) + yPosition + "px";  
 }
-resetSkyObjects()
+resetSkyObjects();
 
 
 
 function move_by_ellipse() {
-  let xNewPositionSun= (ellipseSize*Math.cos(posInUnitСircleSun)) + xPosition;
-  let yNewPositionSun= (ellipseSize*axialElongation*Math.sin(posInUnitСircleSun)) + yPosition;
+  let xNewPositionSun = (ellipseSize*Math.cos(posInUnitСircleSun)) + xPosition;
+  let yNewPositionSun = (ellipseSize*axialElongation*Math.sin(posInUnitСircleSun)) + yPosition;
 
-  let xNewPositionMoon= (ellipseSize*Math.cos(posInUnitСircleMoon)) + xPosition;
-  let yNewPositionMoon= (ellipseSize*axialElongation*Math.sin(posInUnitСircleMoon)) + yPosition;
+  let xNewPositionMoon = (ellipseSize*Math.cos(posInUnitСircleMoon)) + xPosition;
+  let yNewPositionMoon = (ellipseSize*axialElongation*Math.sin(posInUnitСircleMoon)) + yPosition;
 
   posInUnitСircleSun += speed;
   posInUnitСircleMoon += speed;
@@ -115,4 +113,4 @@ window.addEventListener("load", function () {
 //   document.getElementById("zikrs").innerHTML=`${localStorage.count}` ;
 //   document.getElementById('sunID').style.top= 350 + "px";
 // }
-// reset()
+// reset();
