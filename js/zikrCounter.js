@@ -39,18 +39,18 @@ let speed = pi/40;
 let posInUnitСircleSun = pi;
 let posInUnitСircleMoon = 0;
 
-function initialStart() {  
+function checkForNaN() {  
   let x = localStorage.count;
   if (isNaN(x) || x == undefined) {
     localStorage.count = 0;
   }
   document.getElementById("zikrs").innerHTML=`${localStorage.count}`
 }
-initialStart();
+checkForNaN();
 
 function count() {  
   moveByEllipse();
-  //moveByLine()
+  //moveByLine();
   localStorage.count++;
   document.getElementById("zikrs").innerHTML=`${localStorage.count}`;
 }
@@ -58,7 +58,7 @@ function count() {
 function resetZikrs() {
   localStorage.count = 0;
   document.getElementById("zikrs").innerHTML=`${localStorage.count}` ;
-  resetSkyObjects()
+  resetSkyObjects();
 }
 
 function resetSkyObjects() { 
@@ -72,8 +72,6 @@ function resetSkyObjects() {
   document.getElementById('moonID').style.top = (ellipseSize*axialElongation*Math.sin(posInUnitСircleMoon)) + yPosition + "px";  
 }
 resetSkyObjects();
-
-
 
 function moveByEllipse() {
   let xNewPositionSun = (ellipseSize*Math.cos(posInUnitСircleSun)) + xPosition;
