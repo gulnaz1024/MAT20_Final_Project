@@ -92,7 +92,6 @@ function moveByEllipse() {
   let offsetMoon = document.getElementById("moonID");
   offsetMoon.style.top = yNewPositionMoon + "px";
   offsetMoon.style.left = xNewPositionMoon + "px";
-
 }
 
 window.addEventListener("load", function () {

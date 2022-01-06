@@ -21,7 +21,7 @@ HTML, CSS, JS and Bootstrap 5.
 ### Screeshots
 <img src="https://sun9-25.userapi.com/impg/-frCl91Vy22TK7fqfrbBp5FhTiDrnRfJWlQj6g/trlC0C3QKNw.jpg?size=736x1188&quality=96&sign=6d7449959f9d3379846b17442ba4f409&type=album" align="center"/>
 
-### Feedbacks
+### Video feedbacks
 > [From the Netherlands](https://youtu.be/djk0BfYTVoI)
 
 > [From the United Arab Emirates](https://youtu.be/uMWQHSvaC4g)
